@@ -2,6 +2,7 @@
 //
 
 #include "stdafx.h"
+#include "AppleStock.h"
 #include "MyLinkedListElement.h"
 #include "MyBinaryTreeNode.h"
 
@@ -61,6 +62,10 @@ int main()
 
 	::printf("---Checking balance.\n");
 	bool isBalanced = ::IsTreeBalanced(treeNode, 1);
+
+	// Apple stock question
+	int stockArray []  = { 1, 2, 4, 5, 0, 2, 1, 10, 0, 1 };
+	int maxReturn = ::AppleStockCalculator( stockArray, 10 );
  	return 0;
 }
 
